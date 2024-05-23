@@ -4,6 +4,5 @@ public class Main {
         StudentManager manager = new StudentManager();
         System.out.println(Arrays.toString(manager.getStudents(6)));
         System.out.println("Numbers of students = " + manager.getStudentCount());
-
     }
 }

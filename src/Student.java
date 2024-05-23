@@ -23,14 +23,9 @@ public record Student (String id, String lastName, String firstName, String emai
             return true;
         } else {
             Student otherStud = (Student) other;
-            if (compareTo(otherStud) == 0) {
-                return true;
-            } else {
-                return false;
-            }
+            return compareTo(otherStud) == 0;
         }
     }
-
     @Override
     public int compareTo(Student o) {
         return this.lastName.compareTo(o.lastName);

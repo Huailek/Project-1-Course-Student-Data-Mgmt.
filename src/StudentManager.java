@@ -39,7 +39,6 @@ public class StudentManager implements StudentManagerInterface {
             coursesName = new String[0];
             studentData = new Student[0][];
         }
-
         try {
             scanStudent = new Scanner(new File("Students.txt"));
             scanStudent.nextLine();
